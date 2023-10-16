@@ -88,7 +88,7 @@ function formatPrice(price) {
         maximumFractionDigits: 2 
     }) + ' €';
 
-    return formatted.replace(/,/g, ' ');
+    return formatted.replace(/,/g, ' ').replace(/(\d+) (\d{2}) €$/, '$1.$2 €');
 }
 
 function getValuesFromDropdowns(dropdownsElement) {
