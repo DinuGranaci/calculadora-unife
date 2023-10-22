@@ -320,4 +320,15 @@ input[type=submit]:hover {
     input[type=submit] {
         margin: 0;
     }
+
+}
+
+@media only screen and (max-width: 750px) {
+    #outside-one {
+        margin: 0 auto;
+    }
+
+    .oustide-container {
+        margin: 25px auto 0 auto;
+    }
 }
