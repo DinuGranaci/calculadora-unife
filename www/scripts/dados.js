@@ -22,6 +22,7 @@ window.onload = function () {
 
     addButton.addEventListener('click', function (evt) {
         addDropdown(originalDropdown, lista);
+        limitDigits();
     });
 
     removeButton.addEventListener('click', function (evt) {
@@ -45,6 +46,16 @@ window.onload = function () {
     });
 
 };
+
+function limitDigits() {
+    const quantidades = document.querySelectorAll('.quantidades');
+    quantidades[quantidades.length - 1].addEventListener('input', function(e) {
+        if (this.value.length > 3) {
+            this.value = this.value.slice(0, 3); // Truncate to first 3 digits
+        }
+    });
+
+}
 
 function submit() {
     const price = document.getElementById('price');
