@@ -186,7 +186,7 @@ option {
 }
 
 #price {
-    background-color: #ebedec;
+    background-color: #dbdbdb;
 }
 
 #last-row {
@@ -229,7 +229,7 @@ option {
 }
 
 input[type=reset] {
-    background-color: #ebedec;
+    background-color: #dbdbdb;
     color: black;
     margin-right: 20px;
 }
